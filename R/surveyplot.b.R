@@ -10,6 +10,7 @@ surveyPlotClass <- if (requireNamespace('jmvcore')) R6::R6Class(
             plotsAll <- self$results$plots
             
             if (length(vars) == 0) {
+                plotsAll$addItem(key=0)
                 # add a group element if there are no variables    
             }
             
